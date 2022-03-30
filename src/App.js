@@ -6,7 +6,7 @@ import Particles from 'react-tsparticles'
 function App() {
   return (
     <div >
-      <Particles
+      <Particles className='particles-canvas'
         options={{
           fps_limit: 60,
           interactivity: {

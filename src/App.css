@@ -44,9 +44,17 @@ nav{
 }
 
 .navbar-brand{
-    max-width: 17.25rem;
+    width: 17.25rem;
     padding: 0 !important;
     height: 6.5rem !important;
+}
+
+@media(max-width: 768px){
+   
+    .navbar-brand{
+        width: 7rem;
+    }
+    
 }
 
 .n-link:hover{
@@ -78,6 +86,7 @@ nav{
     left: 0;
     bottom: 0;
     text-shadow: 0rem 0rem 0.313rem black;
+    z-index: 1;
 }
 
 .main-info h1{
@@ -85,10 +94,23 @@ nav{
     text-transform: uppercase;
 }
 
+
 .typed-text{
     color: var(--primary);
     font-size: 2rem;
 }
+
+@media(max-width: 768px){
+    .main-info h1{
+        font-size: 1.5rem !important;
+    }
+
+    .typed-text{
+        font-size: 1.3rem !important;
+    }
+    
+}
+
 
 
 /* -------------HEADER MAIN OFFER BUTTON--------------- */
@@ -101,6 +123,13 @@ nav{
     margin: 2rem;
 }
 
+.btn-main-offer:hover{
+    text-decoration: none;
+    background-color: var(--primary-hover-red);
+    color: var(--primary);
+    transition: 0.5s ease-in-out;
+}
+
 /* -------------PARTICLES-------------- */
 
 #tsparticles{
@@ -108,4 +137,11 @@ nav{
     height: 100vh;
     width: 100vw;
     z-index: 1;
+}
+
+@media(max-width: 768px){
+    .particles-canvas{
+        display: none;
+    }
+    
 }
