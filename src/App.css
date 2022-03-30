@@ -44,3 +44,7 @@ a{
     border-bottom: 0.1rem solid white;
     
 }
+
+.navbar-toggler-icon{
+    border: 1px solid yellow;
+}

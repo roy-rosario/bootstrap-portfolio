@@ -2,10 +2,11 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Container from 'react-bootstrap/Container'
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
-import NavDropdown from 'react-bootstrap/NavDropdown'
+// import NavDropdown from 'react-bootstrap/NavDropdown'
 import logo from '../logo.png'
 import '../App.css'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faBars} from '@fortawesome/free-solid-svg-icons'
 
 const NavBar = () =>{
     return(
@@ -13,7 +14,9 @@ const NavBar = () =>{
             <Navbar bg="dark"  expand="lg" >
                 <Container fluid>
                     <Navbar.Brand href="#home"><img className='logo' src={logo} alt="logo..."/></Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Toggle aria-controls="basic-navbar-nav">
+                        <FontAwesomeIcon icon={faBars} style={{color: "white"}}/>
+                    </Navbar.Toggle>
                     <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
                         <Nav.Link className="ms-2 n-link" href="#home">about</Nav.Link>
