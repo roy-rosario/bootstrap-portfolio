@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Kufam:wght@500&family=Lobster&display=swap');
+
+:root{
+    --primary: #fff;
+}
+
+
+body{
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+/* -------------NAVBAR--------------- */
+
+.logo{
+    width: 14.25rem;
+}
+
+/* -------------MENU LINKS---------------- */
+
+.nav-link{
+    font-weight: 400;
+    letter-spacing: 0.0375rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.nav-link:focus{
+    border-top: 0.5rem;
+    color: orange;
+}
+
+a{
+    color: var(--primary) !important;
+}
+
+.navbar-brand{
+    max-width: 17.25rem;
+    padding: 0 !important;
+    height: 6.5rem !important;
+}
+
+.n-link:hover{
+    border-bottom: 0.1rem solid white;
+    
+}

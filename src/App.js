@@ -1,11 +1,10 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-import Card from 'react-bootstrap/Card'
-import Container from 'react-bootstrap/Container'
+import NavBar from './components/NavBar'
 
 function App() {
   return (
     <div >
-      <h2>Portfolio Project...</h2>
+      <NavBar/>
     </div>
   );
 }
