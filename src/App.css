@@ -22,6 +22,9 @@ body{
 }
 
 /* -------------MENU LINKS---------------- */
+nav{
+    z-index: 2;
+}
 
 .nav-link{
     font-weight: 400;
@@ -96,4 +99,13 @@ body{
     padding: 0.625rem 0.75rem 0.75rem 0.75rem;
     color: var(--primary);
     margin: 2rem;
+}
+
+/* -------------PARTICLES-------------- */
+
+#tsparticles{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
 }
