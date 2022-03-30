@@ -1,7 +1,13 @@
+*{
+    box-sizing: border-box;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Kufam:wght@500&family=Lobster&display=swap');
 
 :root{
     --primary: #fff;
+    --primary-red: #ef4035;
+    --primary-hover-red: #f33501;
 }
 
 
@@ -25,12 +31,12 @@ body{
     font-size: 0.8rem;
 }
 
-.nav-link:focus{
+/* .n-link:focus{
     border-top: 0.5rem;
     color: orange;
-}
+} */
 
-a{
+.navbar-nav a{
     color: var(--primary) !important;
 }
 
@@ -41,10 +47,53 @@ a{
 }
 
 .n-link:hover{
-    border-bottom: 0.1rem solid white;
+    border-top: 0.1rem solid white;
     
 }
 
-.navbar-toggler-icon{
-    border: 1px solid yellow;
+/* -------------HEADER--------------- */
+
+.header-wrapper{
+    position: relative;
+    background-size: cover;
+    background-image: url('./header-bg.jpg'), radial-gradient( rgb(36, 36, 36), rgb(122, 122, 122));
+    background-blend-mode: overlay;
+    background-position: center;
+    height: 90vh;
+
+}
+
+.main-info{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    text-shadow: 0rem 0rem 0.313rem black;
+}
+
+.main-info h1{
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.typed-text{
+    color: var(--primary);
+    font-size: 2rem;
+}
+
+
+/* -------------HEADER MAIN OFFER BUTTON--------------- */
+
+.btn-main-offer{
+    border: 1px solid var(--primary-red);
+    text-transform: uppercase;
+    padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+    color: var(--primary);
+    margin: 2rem;
 }
